@@ -1,0 +1,6 @@
+nombre;nacionalidad;edad
+ramon;2;20
+jhoan;1;20
+moises;0;-1163005939
+moises;1;30
+moises;2;33
