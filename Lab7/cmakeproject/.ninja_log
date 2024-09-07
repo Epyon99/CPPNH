@@ -1,0 +1,4 @@
+# ninja log v6
+13	907	7460835020298819	CMakeFiles/my_program.dir/helper.cpp.obj	2c510b84342f9eaa
+3	914	7460835020213423	CMakeFiles/my_program.dir/main.cpp.obj	f1134c55001af045
+915	1196	7460835029339586	my_program.exe	7cd5848ff023f863

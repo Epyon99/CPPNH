@@ -3,6 +3,7 @@
 #include <map>
 #include <vector>
 #include <algorithm>
+
 struct Jugador
 {
     Jugador(std::string n) : nombre(n) {}
@@ -17,9 +18,11 @@ struct Jugador
         return eleccion;
     }
 };
+
 // Función para determinar el ganador
 std::vector<Jugador> determinarGanador(std::vector<Jugador> jugadores)
 {
+    
     // Mapeo de elecciones a contadores
     std::map<std::string, int> conteo;
     conteo["Piedra"] = 0;
@@ -31,7 +34,9 @@ std::vector<Jugador> determinarGanador(std::vector<Jugador> jugadores)
     {
         conteo[jugadores[i].generarEleccion()]++;
     }
-    for (auto it = conteo.begin(); it != conteo.end();)
+
+
+    for (auto it = conteo.begin(); it != conteo.end(); )
     {
         if (it->second == 0)
         {
@@ -42,6 +47,7 @@ std::vector<Jugador> determinarGanador(std::vector<Jugador> jugadores)
             ++it;
         }
     }
+
     auto maxElement = std::max_element(conteo.begin(), conteo.end());
     auto minElement = std::min_element(conteo.begin(), conteo.end());
     // Verificar si hay un empate total
@@ -49,6 +55,8 @@ std::vector<Jugador> determinarGanador(std::vector<Jugador> jugadores)
     {
         return jugadores;
     }
+
+
     std::string ganador = "";
     if (maxElement->first == "Piedra" && minElement->first == "Papel")
     {
@@ -74,6 +82,8 @@ std::vector<Jugador> determinarGanador(std::vector<Jugador> jugadores)
     {
         ganador = minElement->first;
     }
+
+
     std::vector<Jugador> ganadores;
     for (auto &jugador : jugadores)
     {
@@ -87,8 +97,10 @@ std::vector<Jugador> determinarGanador(std::vector<Jugador> jugadores)
 
 int main()
 {
+    // Crear jugadores
+    const int numeroJugadores = 9;
     std::vector<Jugador> jugadores;
-    for (int i = 0; i < 4; i++)
+    for (int i = 0; i < numeroJugadores; i++)
     {
         jugadores.push_back(Jugador(std::to_string(i)));
     }
