@@ -15,7 +15,7 @@ void guardarToPostgres(Persona* p){
         pqxx::connection conn("dbname=nhcppdb user=moiseschirinos password=Asdf12345678\\# host=nhcppdb.postgres.database.azure.com port=5432");
         pqxx::work tx(conn);
         if (conn.is_open()){
-            tx.exec("INSERT INTO personas (nombre,nacionalidad,edad) VALUES ('moises',1,33)");
+            tx.exec("INSERT INTO personas (nombre,nacionalidad,edad) VALUES ('jose',2,25)");
 
             tx.commit();
         }
@@ -45,6 +45,7 @@ void guardarDatos(Persona* p)
     std::cout << p->nacionalidad << "-";
     std::cout << p->edad << std::endl;
     guardarToFile(p);
+    guardarToPostgres(p);
 };
 
 void recolectarDatos(Persona *persona)
