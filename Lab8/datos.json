@@ -1,0 +1,10 @@
+{
+    "edad":12,
+    "casado":false,
+    "nombre":"moises",
+    "apellido":"chirinos",
+    "contactos":[
+        {"nombre":"daniel","apellido":"fernandez"},
+        {"nombre":"edmundo","apellido":"Dantes"}
+    ]    
+}
