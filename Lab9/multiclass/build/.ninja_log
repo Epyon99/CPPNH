@@ -1,0 +1,9 @@
+# ninja log v6
+12	422	7485859961355703	CMakeFiles/multiclass.dir/src/Teacher.cpp.obj	33dc20869f0405b8
+8	426	7485859961315678	CMakeFiles/multiclass.dir/src/Person.cpp.obj	d79a1137f21c4c92
+16	435	7485859961389016	CMakeFiles/multiclass.dir/src/Student.cpp.obj	bbeea45ca3859d88
+3	3100	7485859961264385	CMakeFiles/multiclass.dir/src/Main.cpp.obj	7ad90ce91b47876c
+3102	3268	7485859992247440	multiclass.exe	81c824c668e90ada
+24	9589	7485897329897929	CMakeFiles/multiclass.dir/src/Student.cpp.obj	bbeea45ca3859d88
+20	9600	7485897329852741	CMakeFiles/multiclass.dir/src/Person.cpp.obj	d79a1137f21c4c92
+16	12018	7485897329812726	CMakeFiles/multiclass.dir/src/Main.cpp.obj	7ad90ce91b47876c
